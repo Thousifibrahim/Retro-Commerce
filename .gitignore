@@ -51,3 +51,6 @@ Thumbs.db
 
 # Application specific
 application-local.properties
+
+# Setup scripts (temporary)
+*.ps1

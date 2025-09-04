@@ -12,9 +12,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
-import lombok.Data;
 
-@Data
 @Entity
 @Component
 public class Cart {
@@ -25,4 +23,10 @@ public class Cart {
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     List<Item> items = new ArrayList<Item>();
 
+    // Getters and Setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+    
+    public List<Item> getItems() { return items; }
+    public void setItems(List<Item> items) { this.items = items; }
 }

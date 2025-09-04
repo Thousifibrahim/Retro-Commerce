@@ -75,26 +75,42 @@ MyShop is a full-featured e-commerce platform built with Spring Boot and Thymele
 
 Before running this application, make sure you have the following installed:
 
-- ☕ **Java 17** or higher
+- ☕ **Java 17** (Recommended) or **Java 21** - Project is optimized for Java 17
 - 🗄️ **MySQL 8.0** or higher
 - 🔧 **Maven 3.6** or higher
 - 📧 **Gmail account** (for email functionality)
 - 💳 **Razorpay account** (for payment processing)
 
+### ⚠️ Current Build Status
+
+**Note**: This project currently has Java 24 compatibility issues with Maven compiler plugins. The following fixes have been applied:
+
+- ✅ Removed Lombok dependencies and added manual getters/setters
+- ✅ Updated Maven compiler configuration for Java 17 compatibility
+- ✅ Fixed all DTO classes with explicit method implementations
+
 ### Installation & Setup
 
-1. **Clone the repository**
+#### Option 1: Using Java 17 (Recommended)
+
+1. **Install Java 17**
+   ```bash
+   # Download from https://adoptium.net/
+   # Set JAVA_HOME to Java 17 installation directory
+   ```
+
+2. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/EcommerceSite.git
    cd EcommerceSite
    ```
 
-2. **Configure MySQL Database**
+3. **Configure MySQL Database**
    ```sql
    CREATE DATABASE ecommerce;
    ```
 
-3. **Update Application Properties**
+4. **Update Application Properties**
    
    Edit `src/main/resources/application.properties`:
    ```properties
@@ -112,20 +128,28 @@ Before running this application, make sure you have the following installed:
    razorpay.key.secret=your_razorpay_secret
    ```
 
-4. **Build and Run the Application**
+5. **Build and Run the Application**
    ```bash
-   # Using Maven
-   mvn clean install
-   mvn spring-boot:run
-   
-   # OR using Maven Wrapper
+   # Using Maven Wrapper
    ./mvnw clean install
    ./mvnw spring-boot:run
    ```
 
-5. **Access the Application**
+6. **Access the Application**
    
    Open your browser and navigate to: `http://localhost:80`
+
+#### Option 2: Using Java 24 with Compatibility Settings
+
+If you must use Java 24, try these compatibility settings:
+
+```bash
+# Set environment variables for Java 24 compatibility
+export MAVEN_OPTS="--add-opens java.base/java.lang=ALL-UNNAMED"
+
+# Build with explicit Java 17 target
+./mvnw clean compile -Dmaven.compiler.source=17 -Dmaven.compiler.target=17
+```
 
 ## 📸 Screenshots
 

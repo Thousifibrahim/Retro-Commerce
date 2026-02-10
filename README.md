@@ -78,22 +78,22 @@ External Services
 
 ```
 ┌─────────────────────────────────────────────────┐
-│                  Presentation Layer              │
+│                  Presentation Layer             │
 │  (Thymeleaf Templates + Controllers)            │
 └─────────────────┬───────────────────────────────┘
                   │
 ┌─────────────────▼───────────────────────────────┐
-│                  Business Layer                  │
+│                  Business Layer                 │
 │  (Services + DTOs + Helper Classes)             │
 └─────────────────┬───────────────────────────────┘
                   │
 ┌─────────────────▼───────────────────────────────┐
-│                  Data Access Layer               │
+│                  Data Access Layer              │
 │  (JPA Repositories + DAOs)                      │
 └─────────────────┬───────────────────────────────┘
                   │
 ┌─────────────────▼───────────────────────────────┐
-│                  Database Layer                  │
+│                  Database Layer                 │
 │  (MySQL with Hibernate ORM)                     │
 └─────────────────────────────────────────────────┘
 ```
@@ -196,7 +196,7 @@ razorpay.key.secret=your_secret
 
 5. **Access Application**
 ```
-http://localhost:80
+http://localhost:800
 ```
 
 ---

@@ -237,7 +237,7 @@ http://localhost:800
 
 **Thousif Ibrahim**  
 contact.thousif+github@gmail.com  
-[LinkedIn](https://www.linkedin.com/in/smd-thousif-ibrahim-29050421b)  
+[LinkedIn](https://www.linkedin.com/in/thousif-ibrahim-29050421b)  
 [GitHub](https://github.com/Thousifibrahim)
 
 ---

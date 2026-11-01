@@ -1,5 +1,7 @@
 # Retro-Commerce
 
+![stack: Java](https://img.shields.io/badge/stack-Java-B07219) ![stack: HTML](https://img.shields.io/badge/stack-HTML-E34F26) ![stack: CSS](https://img.shields.io/badge/stack-CSS-1572B6) ![platform: Windows](https://img.shields.io/badge/platform-Windows-6f42c1)
+
 e-commerce platform combining backend architecture with a Windows XP-inspired retro interface.
 
 ## Overview
